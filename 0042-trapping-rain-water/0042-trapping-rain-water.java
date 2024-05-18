@@ -1,47 +1,32 @@
-import java.util.*;
 class Solution {
     public int trap(int[] height) {
         int ans = 0;
-        Deque<Pair> stack = new ArrayDeque<>();
-        int[] trapped = height.clone();
-        Pair pop = new Pair(0,0);
-        for(int i= 0; i < height.length; i++) {
-            int h = height[i];
-            while(!stack.isEmpty()) {
-                if(h >= stack.peekLast().height) {
-                    pop = stack.pollLast();
-                } else {
-                    break;
-                }
-            }
-            Pair l;
-            if(!stack.isEmpty()) {
-                l = stack.peekLast();
-                for(int j = l.index+1; j<i; j++) {
-                    trapped[j] = h;
-                }
-            } else {
-                l = pop;
-                for(int j = l.index+1; j <i; j++) {
-                    trapped[j] = l.height;
-                }
-            }
-            stack.offerLast(new Pair(i,h));
-        }
+        int n = height.length;
+        int l = 0;
+        int r = n - 1;
+        int lmax = height[0];
+        int rmax = height[n-1];
 
-        for(int i =0; i< height.length;i++) {
-            int diff = trapped[i] - height[i];
-            ans += diff;
+        while(l < r) { // 
+            if(lmax <= rmax) { // l이 기준이됨.
+                l++;
+                int cur_h = height[l];
+                if(cur_h < lmax) { // l기준보다 내려가있으면
+                    ans += lmax - cur_h;
+                } else { // l기준보다 올라가있어
+                    lmax = cur_h; // 높이를 바꿔
+                }
+            } else { // r 이 기준이됨.
+                r--;
+                int cur_h = height[r];
+                if(cur_h < rmax) { // r기준보다 내려가있으면
+                    ans += rmax - cur_h;
+                } else { // r기준보다 높으면
+                    rmax = cur_h;
+                }
+            }
         }
         return ans;
+        
     }
-    public static class Pair {
-        int index;
-        int height;
-        public Pair(int index, int height) {
-            this.index = index;
-            this.height = height;
-        }
-    }
-
 }
