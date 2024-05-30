@@ -1,38 +1,65 @@
+import java.util.*;
+
 class Solution {
-    static int[] dr = {0,0,1,-1};
-    static int[] dc = {1,-1,0,0};
+    public static int[] dr = {0,0,1,-1};
+    public static int[] dc = {1,-1,0,0};
 
     public int numIslands(char[][] grid) {
         int ans =0;
         int rowLen = grid.length;
         int colLen = grid[0].length;
         boolean[][] visited = new boolean[rowLen][colLen];
-        for(int r =0 ; r< rowLen; r++) {
-            for(int c = 0; c < colLen; c++) {
-                if((grid[r][c] == '1' ) && (!visited[r][c]) ) { // 1이 보이고 , 방문안한거면 dfs시작.
-                    dfs(r,c,visited, grid);
+        for(int i =0; i < rowLen; i++) {
+            for(int j =0; j < colLen;j++) {
+                if((grid[i][j] == '1' )  && (!visited[i][j])) {
+                    bfs(i,j,visited, grid);
                     ans++;
+                    
                 }
+                
             }
         }
-        
         return ans;
+        
+
     }
-    public static void dfs(int r, int c, boolean[][] visited, char[][] grid) {
-        visited[r][c] = true;
-        for(int i =0; i < 4; i++) {
-            int nextRow = r + dr[i];
-            int nextCol = c + dc[i];
-            if(isValid(nextRow, nextCol, grid)) {
-                if( (grid[nextRow][nextCol] == '1') && (!visited[nextRow][nextCol])) {
-                    dfs(nextRow, nextCol, visited, grid);
-                }
-            } 
-        }
+    public static void print(Object o) {
+        System.out.println(o);
     }
-    public static boolean isValid(int r, int c, char[][] grid) {
+   
+    public static void bfs(int r, int c, boolean[][] visited, char[][] grid) {
         int rowLen = grid.length;
         int colLen = grid[0].length;
-        return ( 0 <= r && r < rowLen ) && ( 0 <= c && c < colLen);
+        Deque<Point> q = new ArrayDeque<>();
+        q.offer(new Point(r,c));
+        visited[r][c] = true;
+        while(!q.isEmpty()) {
+            Point cur = q.poll();
+            int curRow = cur.r;
+            int curCol = cur.c;
+            for(int i =0; i < 4; i++) {
+                int nr = dr[i] + curRow;
+                int nc = dc[i] + curCol;
+                if( (0 <= nr && nr < rowLen) && (0 <= nc && nc < colLen) ) {
+                    if(!visited[nr][nc] && grid[nr][nc] == '1') {
+                        q.offer(new Point(nr, nc));
+                        visited[nr][nc] = true;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+
+    public static class Point {
+        int r, c;
+        public Point(int r, int c) {
+            this.r = r;
+            this.c = c;
+        }
+
     }
 }
