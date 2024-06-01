@@ -1,35 +1,39 @@
 import java.util.*;
 class Solution {
-    public int longestValidParentheses(String str) {
-        int ans = 0;
-        int n = str.length();
-        
-        Stack<Pair> stack = new Stack<>();
-        stack.add(new Pair(-1, ')'));
+    public int longestValidParentheses(String s) {
+        int ans =0;
+        int n = s.length();
 
-        for(int idx =0 ; idx <n; idx++) {
-            Character keyword = str.charAt(idx);
+        Deque<Pair> stack = new ArrayDeque<>();
+        stack.push(new Pair(-1, ')'));
+
+        for(int i = 0; i < n; i++) {
+            Character keyword = s.charAt(i);
             if(keyword == '(') {
-                stack.add(new Pair(idx, keyword));
+                stack.push(new Pair(i, keyword));
             } else { // ')'
                 stack.pop();
                 if(stack.isEmpty()) {
-                    stack.add(new Pair(idx, ')'));
+                    stack.push(new Pair(i, ')'));
                 } else {
-                    int len = idx - stack.peek().index;
-                    ans = Math.max(ans,len);
+                    Pair top = stack.peek();
+                    int len = i - top.idx;
+                    ans = Math.max(ans, len);
                 }
             }
         }
-
+// 0 1 
+// ) ( 
         return ans;
+        
     }
     public static class Pair {
-        int index;
+        int idx;
         Character keyword;
-        public Pair(int index, Character keyword) {
-            this.index = index;
+        public Pair(int idx, Character keyword) {
+            this.idx = idx;
             this.keyword = keyword;
         }
     }
+    
 }
