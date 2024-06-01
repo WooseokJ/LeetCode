@@ -1,44 +1,59 @@
 class Solution {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> ans = new ArrayList<>();
-        // n * n
-        char[][]board =new char[n][n];
-        for(char[] row: board)
-            Arrays.fill(row, '.'); // row 배열안에 모든값 '.' 으로 
-        int curr_cnt = 0 ; 
-        backtrack(0,n,curr_cnt, board, ans); 
-        return ans;      
-    }
-    public static void backtrack(int row, int n, int curr_cnt, char[][] board, List<List<String>> ans) {
-        if(curr_cnt == n) {
-            List<String> a = new ArrayList<>();
-            for(char[] r: board)
-                a.add(new String(r));
-            ans.add(a);
-            curr_cnt = 0;
-            return ;
+
+        char[][] grid = new char[n][n];
+        int rowLen = grid.length;
+        int colLen = grid[0].length;
+
+        for(int r = 0; r < rowLen; r++) {
+            for(int c =0 ; c < colLen; c++) {
+                grid[r][c] = '.';
+            }
         }
 
-        for(int col = 0; col < n; col++) {
-            if(isValid(row,col, board, n)) {
-                board[row][col] = 'Q';
-                backtrack(row+1, n,curr_cnt + 1, board, ans);
-                board[row][col] = '.';
+        int curCnt = 0;
+        backtrack(0,curCnt, n, grid, ans);
+        
+        return ans;
+
+    }
+    public static void backtrack(int r, int curCnt, int n, char[][] grid, List<List<String>> ans) {
+        int rowLen = grid.length;
+        int colLen = grid[0].length;
+
+        if(r == n) {
+            List<String> temp = new ArrayList<>();
+            for(char[] row: grid) {
+                temp.add(new String(row));
+            }
+
+            curCnt = 0;
+            ans.add(temp);
+            return ;
+        }
+        for(int c = 0; c < colLen; c++) {
+            if(isValid(r, c, grid)) {
+                grid[r][c] = 'Q';
+                backtrack(r+1, curCnt+1, n, grid, ans);
+                grid[r][c] = '.';
             }
         }
     }
-    public static boolean isValid(int row, int col, char[][] board,int n) {
-        // 열 확인 ⬆️
-        for(int i =0 ;i < row ; i++) {
-            if(board[i][col] == 'Q') return false;
+    public static boolean isValid(int r, int c, char[][] grid) {
+        int rowLen = grid.length;
+        int colLen = grid[0].length;
+        // 위쪽 
+        for(int curRow = 0; curRow < r; curRow++) {
+            if(grid[curRow][c] == 'Q') return false;
         }
-        // 왼쪽 대각선 확인 ↖️
-        for(int i= row -1, j=col-1 ; i >= 0 && j >= 0 ; i--,j--) {
-            if(board[i][j] == 'Q') return false;
+        // 왼쪽위대각선
+        for(int curRow = (r -1), curCol = (c - 1) ; 0 <= curRow && 0 <= curCol ; curRow--, curCol--) {
+            if(grid[curRow][curCol] == 'Q') return false;
         }
-        //오른쪽 대각선 ↗️
-        for(int i = row -1, j= col+1; i>=0 && j <n;i--,j++) {
-            if(board[i][j] == 'Q') return false;
+        // 오른쪽위대각선
+        for(int curRow = r - 1,  curCol = c + 1; 0 <= curRow && curCol < colLen; curRow--, curCol++) {
+            if(grid[curRow][curCol] == 'Q') return false;
         }
         return true;
     }
