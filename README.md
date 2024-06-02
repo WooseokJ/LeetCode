@@ -15,3 +15,12 @@
 | Sudoku solver           | 완전탐색 | **[풀이](https://github.com/WooseokJ/LeetCode/blob/main/0037-sudoku-solver/0037-sudoku-solver.java)** | 1주차    |
 | N-Queen                 | 완전탐색 | **[풀이](https://github.com/WooseokJ/LeetCode/blob/main/0051-n-queens/0051-n-queens.java)** | 1주차    |
 
+
+# Array
+|  |
+| ------- |
+| [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
+# Backtracking
+|  |
+| ------- |
+| [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
