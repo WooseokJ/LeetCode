@@ -37,17 +37,16 @@ class Solution {
                 for(NodeInfo info: graph.get(curNode)) {
                     int nextNode = info.node;
                     int nextWeight = info.weight;
-                    if(visited[nextNode] <= curWeight + nextWeight) continue;
+                    int totalWeight= curWeight + nextWeight;
+                    if(visited[nextNode] <= totalWeight) continue;
                     if(visited[nextNode] == INF) visitedCnt++;
-                    visited[nextNode] = curWeight + nextWeight;
-                    pq.offer(new NodeInfo(nextNode, curWeight + nextWeight));
+                    visited[nextNode] = totalWeight;
+                    pq.offer(new NodeInfo(nextNode, totalWeight));
                 }
             }
-
-           
         }
-        if(visitedCnt == n) return ans;
-        else return -1;
+
+        return (visitedCnt == n) ? ans : -1;
     }
 
     public static class NodeInfo implements Comparable<NodeInfo> {
