@@ -40,18 +40,17 @@ class Solution {
 
             if(graph.containsKey(cur.node)) {
                 List<Entry> arr = graph.get(cur.node);
-
                 for(Entry next: arr) {
-                    double totalPercent = cur.weight * next.weight;
-                    if(totalPercent > distance[next.node]) {
-                        distance[next.node] = totalPercent;
-                        pq.add(new Entry(next.node, totalPercent));
+                    double newPercent = cur.weight * next.weight;
+                    if(newPercent > distance[next.node]) { // 이전 확률 < 새로운 확률
+                        distance[next.node] = newPercent; // 확률이 더높은 새로운확률로 변경.
+                        pq.add(new Entry(next.node, newPercent));
                     }
                 }
             }
            
         }
-        return distance[end];
+        return distance[end]; // 
     }
 
     public static class Entry implements Comparable<Entry> {
@@ -64,7 +63,9 @@ class Solution {
 
         @Override
         public int compareTo(Entry o) {
-            return (o.weight == this.weight) ? 0 : ((this.weight > o.weight ) ? -1 : 1);
+            if(this.weight - o.weight > 0 ) return -1;
+            else if(this.weight - o.weight < 0) return 1;
+            else return 0;
         }
     }
 }
