@@ -20,6 +20,7 @@
 |  |
 | ------- |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
+| [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 # Backtracking
 |  |
 | ------- |
@@ -42,14 +43,17 @@
 | [0207-course-schedule](https://github.com/WooseokJ/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/WooseokJ/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0744-network-delay-time](https://github.com/WooseokJ/LeetCode/tree/master/0744-network-delay-time) |
+| [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 # Heap (Priority Queue)
 |  |
 | ------- |
 | [0744-network-delay-time](https://github.com/WooseokJ/LeetCode/tree/master/0744-network-delay-time) |
+| [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 # Shortest Path
 |  |
 | ------- |
 | [0744-network-delay-time](https://github.com/WooseokJ/LeetCode/tree/master/0744-network-delay-time) |
+| [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 # Topological Sort
 |  |
 | ------- |
