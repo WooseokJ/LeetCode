@@ -2,14 +2,14 @@ class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
         
         // 방향 그래프 만들기 
-        Map<Integer, List<int[]>> graph = new HashMap<>();
+        Map<Integer, List<NodeInfo>> graph = new HashMap<>();
         for(int[] timeInfo: times) {
             int node = timeInfo[0]; // u
             int nextNode = timeInfo[1]; // v
             int weight = timeInfo[2]; // w
             // putIfAbsent: key존재시 val반환, 없으면 저장하고 null반환.
             graph.putIfAbsent(node, new ArrayList<>()); 
-            graph.get(node).add(new int[] {nextNode, weight}); 
+            graph.get(node).add(new NodeInfo(nextNode, weight)); 
         }
         // 방문여부 리스트 
         int[] visited = new int[n+1];
@@ -33,10 +33,10 @@ class Solution {
 
             
             if(graph.containsKey(curNode)) { // 해당 key가 있으면 
-                // 연결된 간선 탐색
-                for(int[] edge: graph.get(curNode)) {
-                    int nextNode = edge[0];
-                    int nextWeight = edge[1];
+                // key에대해 연결된 간선 탐색
+                for(NodeInfo info: graph.get(curNode)) {
+                    int nextNode = info.node;
+                    int nextWeight = info.weight;
                     if(visited[nextNode] <= curWeight + nextWeight) continue;
                     if(visited[nextNode] == INF) visitedCnt++;
                     visited[nextNode] = curWeight + nextWeight;
