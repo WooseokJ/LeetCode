@@ -42,7 +42,7 @@ class Solution {
                 int newFirst = nums.get(cur.row).get(cur.col + 1);
                 pq.offer(new Info(newFirst, cur.row, cur.col + 1));
                 max = Math.max(max, newFirst); // 새로꺼낸값과 기존 최대값 비교.
-            } else {
+            } else { // 만약 해당행의 범위가 끝나면 종료
                 break;
             }
 
