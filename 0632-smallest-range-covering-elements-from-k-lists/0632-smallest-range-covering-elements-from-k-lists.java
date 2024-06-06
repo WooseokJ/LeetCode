@@ -20,7 +20,8 @@ class Solution {
         ans[0] = min;
         ans[1] = max;
         int curMinLen = ans[1] - ans[0];
-        
+
+
         // queue 순환.
         while(!pq.isEmpty()) {
             // 최소값 뺴줘.
@@ -29,7 +30,6 @@ class Solution {
             int newLen = max - cur.first;
             System.out.println(cur.first + " " + newLen + " " + curMinLen);
             if(newLen < curMinLen) {
-                
                 curMinLen = newLen;
                 System.out.println(curMinLen + " == ");
                 min = cur.first;
@@ -42,6 +42,7 @@ class Solution {
                 int newFirst = nums.get(cur.row).get(cur.col + 1);
                 pq.offer(new Info(newFirst, cur.row, cur.col + 1));
                 max = Math.max(max, newFirst); // 새로꺼낸값과 기존 최대값 비교.
+            
             } else { // 만약 해당행의 범위가 끝나면 종료
                 break;
             }
