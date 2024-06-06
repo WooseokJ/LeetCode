@@ -20,6 +20,7 @@
 |  |
 | ------- |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 # Backtracking
 |  |
@@ -47,6 +48,7 @@
 # Heap (Priority Queue)
 |  |
 | ------- |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0744-network-delay-time](https://github.com/WooseokJ/LeetCode/tree/master/0744-network-delay-time) |
 | [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 # Shortest Path
@@ -59,3 +61,19 @@
 | ------- |
 | [0207-course-schedule](https://github.com/WooseokJ/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/WooseokJ/LeetCode/tree/master/0210-course-schedule-ii) |
+# Hash Table
+|  |
+| ------- |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+# Greedy
+|  |
+| ------- |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+# Sliding Window
+|  |
+| ------- |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+# Sorting
+|  |
+| ------- |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
