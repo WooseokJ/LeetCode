@@ -19,6 +19,7 @@
 # Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/WooseokJ/LeetCode/tree/master/0001-two-sum) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
@@ -64,6 +65,7 @@
 # Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/WooseokJ/LeetCode/tree/master/0001-two-sum) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 # Greedy
 |  |
