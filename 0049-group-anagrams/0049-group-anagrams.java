@@ -15,11 +15,11 @@ class Solution {
             Arrays.sort(curArr);
             String sortedStr = Arrays.toString(curArr);
 
-            // newStr기준으로 memo에 있는지없는지.(애너그램 같은게 있는지 없는지 )
-            if(memo.containsKey(sortedStr)) { // newStr에대해 같은거 있으면.
+            // sortedStr기준으로 memo에 있는지없는지.(
+            if(memo.containsKey(sortedStr)) { //이미 sortedStr가 있으면 새로 애너그램모음집에 추가.
                 List<String> arr = memo.get(sortedStr);
                 arr.add(strs[i]);
-            } else { // memo에 없으면 curStr 저장,(애너그램 같은게 없으면 정렬된str :curStr 저장.)
+            } else { // sortedStr가 memo에 없으면 <sortedStr: 애너그램모음집(curStr)> 저장
                 List<String> temp = new ArrayList<String>();
                 temp.add(curStr); 
                 memo.put(sortedStr, temp); // sortedStr : curStr
