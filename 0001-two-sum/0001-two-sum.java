@@ -49,7 +49,7 @@ class Solution {
             int findVal = target - nums[curIdx]; // 찾는값 = 목표값 - 현재원소.
             if(memo.containsKey(findVal)) { // 찾는값이 있으면?
                 int findValIdx = memo.get(findVal); // 찾는값의 index 꺼내.
-                return new int[]{findValIdx, curIdx};
+                return new int[]{curIdx, findValIdx};
                 
             } else {
                 memo.put(nums[curIdx], curIdx);
