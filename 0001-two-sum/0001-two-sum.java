@@ -41,20 +41,21 @@ class Solution {
         // return null;
 
         /** 5주차 hashTable */
-        // <값, index>
+        // 반환해야하는건 [num1의 idx, num2의 idx]
+        // <값, idx> 
         Map<Integer, Integer> memo = new HashMap<>();
-
-        for(int i =0; i < nums.length; i++) {
-            int findVal = target - nums[i];
-            if(memo.containsKey(findVal)) {
-               int getNum = memo.get(findVal) ;
-               return new int[]{getNum, i };
+        
+        for(int curIdx = 0; curIdx< nums.length; curIdx++) {
+            int findVal = target - nums[curIdx]; // 찾는값 = 목표값 - 현재원소.
+            if(memo.containsKey(findVal)) { // 찾는값이 있으면?
+                int findValIdx = memo.get(findVal); // 찾는값의 index 꺼내.
+                return new int[]{findValIdx, curIdx};
+                
+            } else {
+                memo.put(nums[curIdx], curIdx);
             }
-
-            memo.put(nums[i], i);
             
-        } 
-
+        }
         return new int[]{-1,-1};
     }
 }
