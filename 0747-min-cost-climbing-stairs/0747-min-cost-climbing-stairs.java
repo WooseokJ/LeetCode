@@ -3,10 +3,10 @@ import java.util.*;
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
         // return topdown(cost);
-        return bottomup(cost);
+        // return bottomup(cost); // 1초
         // Map 사용
 
-        // return topdown2(cost);
+        return topdown2(cost);
         // return downup2(cost); // 4초 
     }
     public static int downup2(int[] cost) {
