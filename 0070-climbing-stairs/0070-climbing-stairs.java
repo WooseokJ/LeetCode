@@ -7,7 +7,8 @@ class Solution {
         // return topdown(n);
         // return downup(n);
 
-        return downup2(n);
+        // return downup2(n);
+        return topdown2(n);
     }
     public static int topdown2(int n) {
         Map<Integer, Integer> memo = new HashMap<>();
