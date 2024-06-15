@@ -3,8 +3,8 @@ class Solution {
     // top down VS bottom up
 
     public int climbStairs(int n) {
-        return topdown(n);
-        // return downup(n);
+        // return topdown(n);
+        return downup(n);
 
 
       
@@ -19,6 +19,7 @@ class Solution {
             memo[i] = memo[i-1] + memo[i-2];
         return memo[n];
     }
+
 
     public static int topdown(int n) {
         // top down   dp(2) = dp(0) + dp(1)
