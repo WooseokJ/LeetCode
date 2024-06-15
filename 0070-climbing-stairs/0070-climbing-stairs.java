@@ -5,12 +5,12 @@ class Solution {
 
     public int climbStairs(int n) {
         // List쓴거
-        // return topdown(n);
+        return topdown(n);
         // return downup(n);
 
         // Map쓴거
         // return downup2(n);
-        return topdown2(n);
+        // return topdown2(n);
     }
     public static int topdown2(int n) {
         Map<Integer, Integer> memo = new HashMap<>();
