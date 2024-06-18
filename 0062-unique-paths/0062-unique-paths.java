@@ -1,7 +1,15 @@
+import java.util.*;
 class Solution {
     public int uniquePaths(int m, int n) {
-        return topdown(m,n);
+        // return topdown(m,n);
         // return downup(m,n);
+
+        // Map이용.
+        Point p = new Point(m,n);
+        return p.downup(m,n);
+
+        // return p.topdown(m,n);
+
     }
 
     public static int downup(int m , int n) {
@@ -29,6 +37,43 @@ class Solution {
         if(memo[r][c] == -1) memo[r][c] = dp(memo, r-1,c) + dp(memo,r,c-1);
         return memo[r][c];
     }
+
+    public static class Point {
+        int r, c;
+        Map<String, Integer> memo;
+
+        public Point(int r, int c) {
+            this.r = r;
+            this.c = c;
+            this.memo = new HashMap<>();
+        }
+        public String getKey(int r, int c) {
+            return r+","+c;
+        }
+        public int downup(int m, int n) {
+            for(int i = 0; i < m ; i++)
+                memo.put(getKey(i,0), 1);
+            for(int i =0; i < n; i++) 
+                memo.put(getKey(0,i), 1);
+            for(int i =1; i < m; i++) {
+                for(int j = 1; j < n; j++) {
+                    int down = memo.get(getKey(i-1, j));
+                    int right = memo.get(getKey(i, j-1));
+                    int sum = down + right;
+                    memo.put(getKey(i,j), sum);
+                }
+            }
+            return memo.get(getKey(m-1,n-1));
+        }
+
+        public int topdown(int m , int n) {
+            if(m == 0 || n == 1) return 1;
+            return 1;
+        }
+
+    }
+
+  
 }
 
 // down 2, right 6
