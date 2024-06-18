@@ -3,8 +3,8 @@ import java.util.*;
 class Solution {
     static int ans = 0;
     public int lengthOfLIS(int[] nums) {
-        return downup(nums);
-        // return downup2(nums, nums.length);
+        //return downup(nums); // 582
+        return downup2(nums, nums.length);
     }
 
     public static int downup2(int[] num, int n) {
@@ -19,9 +19,12 @@ class Solution {
         for (int r = 1; r < n; r++)
             for (int l = 0; l < r; l++) // 0 ~ r-1까지 순회 
                 if (num[r] > num[l]) { // r이 크다는것 확인.
-                    dp[r] = Math.max(dp[r], dp[l]+1);
+                    
                     // if (dp[r] < dp[l] + 1) // 더 긴 수의나열이 가능하면 업데이트 (dp[r]은 기준점의 길이, dp[l]은 조사하는점의 길이 )
                         // dp[r] = dp[l] + 1;
+
+                    // 위와 동일.
+                    dp[r] = Math.max(dp[r], dp[l]+1);
                 } 
                     
      
