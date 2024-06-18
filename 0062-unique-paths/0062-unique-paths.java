@@ -6,9 +6,8 @@ class Solution {
 
         // Map이용.
         Point p = new Point(m,n);
-        // return p.downup(m,n);
-
-        return p.topdown(m,n);
+        return p.downup(m,n); // 
+        // return p.topdown(m,n); // 13초
 
     }
 
