@@ -7,24 +7,28 @@ class Solution {
         return topdown(nums, nums.length);
     }
 
-    public static int topdown(int arr[], int n) {
-        int lis[] = new int[n];
-        int i, j, max = 0;
+    public static int topdown(int[] num, int n) {
+        int dp[] = new int[n];
+        int ans = 0;
         
-        // 다 1 로 바꿔.
-        for (i = 0; i < n; i++)
-            lis[i] = 1;
-        // 순회 
-        for (i = 1; i < n; i++)
-            for (j = 0; j < i; j++) // 0~j까지 순회
-                if (arr[i] > arr[j] && (lis[i] < lis[j] + 1)) // 기준 숫자가 더 크고 
-                    lis[i] = lis[j] + 1;
+        // 길이 1 로 초기화.
+        for (int i = 0; i < n; i++) 
+            dp[i] = 1;
+        
+            
+        
+        // 전체 순회 
+        for (int r = 1; r < n; r++)
+            for (int l = 0; l < r; l++) // 0~j까지 순회
+                if (num[r] > num[l]) // 기준 숫자가 더 크고 
+                    if (dp[r] < dp[l] + 1) // 기준숫자 < 해당숫자 + 1 이면 갱신 . 
+                        dp[r] = dp[l] + 1;
 
-        for (i = 0; i < n; i++)
-            if (max < lis[i])
-                max = lis[i];
+        // 순회하면서 최대값 뽑아내기
+        for (int i = 0; i < n; i++)
+            ans = Math.max(ans, dp[i]);
 
-        return max;
+        return ans;
     }
 
     // down up
