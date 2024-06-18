@@ -9,8 +9,8 @@ class Solution {
         // return downup(n);
 
         // Map쓴거
-        return downup2(n);
-        // return topdown2(n);
+        // return downup2(n); // 1초
+        return topdown2(n);
     }
     public static int topdown2(int n) {
         Map<Integer, Integer> memo = new HashMap<>();
