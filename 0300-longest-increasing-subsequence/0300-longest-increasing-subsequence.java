@@ -11,22 +11,24 @@ class Solution {
         int dp[] = new int[n];
         int ans = 0;
         
-        // 길이 1 로 초기화.
+        // 모든원소 길이 1 로 초기화.
         for (int i = 0; i < n; i++) 
             dp[i] = 1;
         
-            
-        
-        // 전체 순회 
+        // r 순회.(연속수중 r이 가장 큰수로 생각.)
         for (int r = 1; r < n; r++)
-            for (int l = 0; l < r; l++) // 0~j까지 순회
-                if (num[r] > num[l]) // 기준 숫자가 더 크고 
-                    if (dp[r] < dp[l] + 1) // 기준숫자 < 해당숫자 + 1 이면 갱신 . 
+            for (int l = 0; l < r; l++) // 0 ~ r-1까지 순회 
+                if (num[r] > num[l]) { // r이 가장크다는거 확인. 
+                    if (dp[r] < dp[l] + 1) // 더 긴 수의나열이 가능하면 업데이트
                         dp[r] = dp[l] + 1;
-
-        // 순회하면서 최대값 뽑아내기
-        for (int i = 0; i < n; i++)
+                } 
+                    
+     
+        
+        // 순회하면서 최대값(가장긴 수의나열) 찾기.
+        for (int i = 0; i < n; i++) {
             ans = Math.max(ans, dp[i]);
+        }
 
         return ans;
     }
