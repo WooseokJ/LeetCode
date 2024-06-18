@@ -23,6 +23,7 @@
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0747-min-cost-climbing-stairs](https://github.com/WooseokJ/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
@@ -106,6 +107,7 @@
 | ------- |
 | [0062-unique-paths](https://github.com/WooseokJ/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/WooseokJ/LeetCode/tree/master/0070-climbing-stairs) |
+| [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0747-min-cost-climbing-stairs](https://github.com/WooseokJ/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 # Memoization
 |  |
@@ -115,3 +117,7 @@
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/WooseokJ/LeetCode/tree/master/0062-unique-paths) |
+# Binary Search
+|  |
+| ------- |
+| [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
