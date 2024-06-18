@@ -6,11 +6,11 @@ class Solution {
     public int climbStairs(int n) {
         // List쓴거
         // return topdown(n); // 0초
-        // return downup(n);
+        return downup(n);
 
         // Map쓴거
         // return downup2(n); // 1초
-        return topdown2(n);
+        // return topdown2(n); // 1초 
     }
     public static int topdown2(int n) {
         Map<Integer, Integer> memo = new HashMap<>();
