@@ -2,10 +2,12 @@ import java.util.*;
 
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        return topdown(nums);
+        
+        return downup(nums);
     }
-    // top down
-    public static int topdown(int[] nums) {
+    // down up
+    public static int downup(int[] nums) {
+        if(nums.length == 0) return 0;
         // idx, 길이
         Map<Integer, Integer> memo = new HashMap<>();
         memo.put(0,1); // 0번쨰 인덱스 의 길이 1 
