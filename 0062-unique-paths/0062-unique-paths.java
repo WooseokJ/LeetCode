@@ -6,9 +6,9 @@ class Solution {
 
         // Map이용.
         Point p = new Point(m,n);
-        return p.downup(m,n);
+        // return p.downup(m,n);
 
-        // return p.topdown(m,n);
+        return p.topdown(m,n);
 
     }
 
@@ -67,8 +67,18 @@ class Solution {
         }
 
         public int topdown(int m , int n) {
-            if(m == 0 || n == 1) return 1;
-            return 1;
+            return dp(m-1,n-1);
+        }
+        public int dp(int r, int c) {
+            if(r == 0 || c == 0 ) {
+                memo.put(getKey(r,c), 1);
+                return 1;
+            }
+            if(!memo.containsKey(getKey(r,c))) {
+                int sum = dp(r-1,c) + dp(r,c-1);
+                memo.put(getKey(r,c), sum);
+            }
+            return memo.get(getKey(r,c));
         }
 
     }
