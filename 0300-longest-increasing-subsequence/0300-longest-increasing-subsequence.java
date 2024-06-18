@@ -3,8 +3,8 @@ import java.util.*;
 class Solution {
     static int ans = 0;
     public int lengthOfLIS(int[] nums) {
-        // return downup(nums);
-        return downup2(nums, nums.length);
+        return downup(nums);
+        // return downup2(nums, nums.length);
     }
 
     public static int downup2(int[] num, int n) {
