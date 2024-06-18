@@ -1,8 +1,8 @@
 import java.util.*;
 class Solution {
     public int uniquePaths(int m, int n) {
-        // return topdown(m,n);
-        return downup(m,n); // 
+        return topdown(m,n);
+        // return downup(m,n); // 0초
 
         // Map이용.
         // Point p = new Point(m,n);
