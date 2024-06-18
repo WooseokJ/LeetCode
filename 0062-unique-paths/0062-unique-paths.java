@@ -2,11 +2,11 @@ import java.util.*;
 class Solution {
     public int uniquePaths(int m, int n) {
         // return topdown(m,n);
-        // return downup(m,n);
+        return downup(m,n); // 
 
         // Map이용.
-        Point p = new Point(m,n);
-        return p.downup(m,n); // 
+        // Point p = new Point(m,n);
+        // return p.downup(m,n); // 11초 
         // return p.topdown(m,n); // 13초
 
     }
