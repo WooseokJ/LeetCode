@@ -97,6 +97,7 @@
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/WooseokJ/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
+| [1250-longest-common-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/1250-longest-common-subsequence) |
 # Math
 |  |
 | ------- |
@@ -109,6 +110,7 @@
 | [0070-climbing-stairs](https://github.com/WooseokJ/LeetCode/tree/master/0070-climbing-stairs) |
 | [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0747-min-cost-climbing-stairs](https://github.com/WooseokJ/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
+| [1250-longest-common-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/1250-longest-common-subsequence) |
 # Memoization
 |  |
 | ------- |
