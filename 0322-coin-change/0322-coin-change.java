@@ -18,7 +18,6 @@ class Solution {
         }
 
         if(memo[amount] == amount ) {
-            System.out.println("==" + amount);
             ans = -1;
         } else {
             ans = memo[amount] + 1;
