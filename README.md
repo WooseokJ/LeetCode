@@ -84,3 +84,14 @@
 | Longest increasing subsequence       | DP       | [풀이](https://github.com/WooseokJ/LeetCode/blob/main/0300-longest-increasing-subsequence/0300-longest-increasing-subsequence.java) | 6주차    |
 | longest common subsequence           | DP       | [풀이](https://github.com/WooseokJ/LeetCode/blob/main/1250-longest-common-subsequence/1250-longest-common-subsequence.java) | 6주차    |
 | minimum difficulty of a job schedule | DP       | 풀이                                                         | 6주차    |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0060-permutation-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0060-permutation-sequence) |
+## Recursion
+|  |
+| ------- |
+| [0060-permutation-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0060-permutation-sequence) |
+<!---LeetCode Topics End-->
