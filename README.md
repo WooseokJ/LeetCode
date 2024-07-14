@@ -104,6 +104,7 @@
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
+| [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Hash Table
 |  |
 | ------- |
@@ -112,4 +113,12 @@
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
+## String
+|  |
+| ------- |
+| [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
 <!---LeetCode Topics End-->
