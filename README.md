@@ -94,4 +94,12 @@
 |  |
 | ------- |
 | [0060-permutation-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0060-permutation-sequence) |
+## Array
+|  |
+| ------- |
+| [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
+## Backtracking
+|  |
+| ------- |
+| [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 <!---LeetCode Topics End-->
