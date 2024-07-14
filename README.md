@@ -97,9 +97,19 @@
 ## Array
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 ## Backtracking
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
+## Hash Table
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
+## Matrix
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 <!---LeetCode Topics End-->
