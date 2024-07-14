@@ -1,6 +1,7 @@
 class Solution {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> ans = new ArrayList<>();
+        
 
 		// n * n board생성
 
@@ -15,35 +16,60 @@ class Solution {
         }
 
         int curCnt = 0;  // 현재 퀸의 개수 
-        backtrack(0,curCnt, n, board, ans);
+        backtrack(new ArrayList<>(), 0,curCnt, n, board, ans);
         
         return ans;
 
     }
-    public static void backtrack(int r, int curCnt, int n, char[][] board, List<List<String>> ans) {
+ public static void backtrack(List<String> curr, int r, int curCnt, int n, char[][] board, List<List<String>> ans) {
         int rowLen = board.length;
         int colLen = board[0].length;
 
 		// 현재 퀸의개수와 n이 같으면 체스판 추가.
         if(r == n) {
-            List<String> temp = new ArrayList<>();
-            for(char[] row: board) {
-                temp.add(new String(row));
-            }
-
-            curCnt = 0;
-            ans.add(temp);
-            return ;
+            ans.add(new ArrayList<>(curr));
+            return;
         }
         // row는 정해졋고 col을 순회
         for(int c = 0; c < colLen; c++) {
             if(isValid(r, c, board)) {
                 board[r][c] = 'Q';
-                backtrack(r+1, curCnt+1, n, board, ans);
+                curr.add(new String(board[r]));
+                backtrack(curr, r+1, curCnt+1, n, board, ans);
+                curr.remove(curr.size()-1);
                 board[r][c] = '.';// 재귀 끝나면
             }
         }
     }
+
+    
+
+    
+    // public static void backtrack(int r, int curCnt, int n, char[][] board, List<List<String>> ans) {
+    //     int rowLen = board.length;
+    //     int colLen = board[0].length;
+
+	// 	// 현재 퀸의개수와 n이 같으면 체스판 추가.
+    //     if(r == n) {
+    //         List<String> temp = new ArrayList<>();
+    //         for(char[] row: board)
+    //             temp.add(new String(row));
+    //         curCnt = 0;
+    //         ans.add(temp);
+            
+    //         return;
+    //     }
+    //     // row는 정해졋고 col을 순회
+    //     for(int c = 0; c < colLen; c++) {
+    //         if(isValid(r, c, board)) {
+    //             board[r][c] = 'Q';
+    //             backtrack(r+1, curCnt+1, n, board, ans);
+    //             board[r][c] = '.';// 재귀 끝나면
+    //         }
+    //     }
+    // }
+
+
     public static boolean isValid(int r, int c, char[][] board) {
         int rowLen = board.length;
         int colLen = board[0].length;
