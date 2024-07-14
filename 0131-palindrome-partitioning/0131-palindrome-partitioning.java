@@ -1,31 +1,31 @@
-
+import java.util.*;
 
 class Solution {
     public List<List<String>> partition(String str) {
-        List<List<String>> StringSet = new ArrayList<>();
-        backtrack(new ArrayList<>(), 0 ,str, StringSet);
-        return StringSet;
+        List<List<String>> ans = new ArrayList<>();
+        
+        backtrack(new ArrayList<>(), 0, str, ans);
+        return ans;
+
     }
     public static void backtrack(List<String> curr, int start, String str, List<List<String>> ans) {
-        int strLen = str.length();
-
-        if(start == strLen) {
+        if(start == str.length()) {
             ans.add(new ArrayList<>(curr));
             return;
         }
-        for(int i = start; i < strLen; i++) {
-            String subString = str.substring(start,i+1);
-            if(isValid(subString)) {
-                curr.add(subString);
+
+        for(int i = start; i < str.length() ;i ++) {
+            String subStr = str.substring(start, i+1);    
+            if(isValid(subStr)) {
+                curr.add(subStr);
                 backtrack(curr, i+1, str, ans);
                 curr.remove(curr.size()-1);
             }
 
         }
-        
     }
-    public static boolean isValid(String str) {
-        String reverseString = new StringBuilder(str).reverse().toString();
-        return str.equals(reverseString);
+    public static boolean isValid(String subStr) {
+        String sb = new StringBuilder(subStr).reverse().toString();
+        return subStr.equals(sb);
     }
 }
