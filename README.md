@@ -98,6 +98,7 @@
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
+| [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 ## Backtracking
 |  |
@@ -120,5 +121,18 @@
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
+## Two Pointers
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
+## Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
