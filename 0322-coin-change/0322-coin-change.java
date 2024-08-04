@@ -1,30 +1,34 @@
+import java.util.*;
 class Solution {
-
     public int coinChange(int[] coins, int amount) {
-        int ans = -1;
+        if(amount == 0) return 0;
+        boolean[] visited = new boolean[amount+1];
 
-        int[] memo = new int[amount+1];
-        Arrays.fill(memo, -1);
-
-        for(int i = 1; i <= amount; i++) { 
-            ans = amount ;
-            for(int coin: coins) {
-                int remain = i - coin; 
-                if(remain < 0) continue;
-                ans = Math.min(ans, memo[remain] + 1);
-                
-            }
-            memo[i] = ans;
-        }
-
-        if(memo[amount] == amount ) {
-            ans = -1;
-        } else {
-            ans = memo[amount] + 1;
-        }
-        return ans;
+        return bfs(amount, visited, coins);
     }
+    public static int bfs(int amount, boolean[] visited, int[] coins) {
+        Deque<Pair> q = new ArrayDeque<>();
+        q.offer(new Pair(amount, 1));
 
-
-
+        while(!q.isEmpty()) {
+            Pair data = q.poll();
+            for(int i = 0; i < coins.length;i++){
+                int next = data.amount - coins[i];
+                if(next == 0) return data.depth;
+                if(next > 0)
+                    if(!visited[next]) {
+                        q.offer(new Pair(next, data.depth+1));
+                        visited[next] = true;
+                    }
+            }
+        }
+        return -1;
+    }
+    public static class Pair{
+        int amount, depth;
+        public Pair(int amount, int depth) {
+            this.amount = amount;
+            this.depth = depth;
+        }
+    }
 }
