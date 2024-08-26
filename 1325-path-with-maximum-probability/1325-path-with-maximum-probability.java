@@ -21,6 +21,7 @@ class Solution {
         Queue<Info> pq = new PriorityQueue<>();
         pq.offer(new Info(start_node, 1.0)); // 스타트, 확률 1 
         percentArr[start_node] = 1.0;
+        
         while(!pq.isEmpty()) {
             Info cur = pq.poll();
             int curNode = cur.node;
