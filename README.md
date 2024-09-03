@@ -99,6 +99,7 @@
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
@@ -113,6 +114,7 @@
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
+| [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 ## Matrix
 |  |
@@ -121,6 +123,7 @@
 ## String
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Dynamic Programming
 |  |
@@ -155,6 +158,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 ## Heap (Priority Queue)
 |  |
