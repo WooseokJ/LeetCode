@@ -1,67 +1,34 @@
 import java.util.*;
 
+
 class Solution {
-    public int lengthOfLongestSubstring(String s) {    
-
-        int ans = 0, l = 0, r = 0;
-        int n = s.length();
+    
+    public int lengthOfLongestSubstring(String s) {
+        int ans = 0;
         int curLen = 0;
-        Set<Character> set = new HashSet<>();
-        while(r < n) {
-            Character curKeyword = s.charAt(r);
-            if(set.contains(curKeyword)) { // abc 있다가 a가 또나와.
-                Character t = s.charAt(l);
-                set.remove(t);
+        int l = 0;
+        int r = 0;
+        Set<Character> memo = new HashSet<>();
+
+        while(r < s.length()) {
+            Character rightWord = s.charAt(r);
+            if(memo.contains(rightWord)) {
+                Character leftWord = s.charAt(l);
                 l++;
-                // curLen++;
-            } else { 
-                set.add(curKeyword);
+                memo.remove(leftWord);
+
+            } else {
+                memo.add(rightWord);
+                
+                curLen = Math.max(curLen,memo.size());
+                
                 r++;
-                curLen = set.size();
             }
-            ans = Math.max(ans, curLen);
         }
-        
-        return ans;
+        ans = Math.max(ans, curLen);
+        System.out.println(l + " " + r);
 
-            
-        // 괄호문제같이 넣고뺴고 .
-        // int ans = 0;
-        // int idx = 0;
-        // Set<Character> set = new HashSet<>();
-        
-        // for(int i =0; i < s.length(); i++) {
-        //     Character curKeyword = s.charAt(i);
-        //     while(set.contains(curKeyword)) {
-                
-        //         Character newKeyword = s.charAt(idx);
-        //         set.remove(newKeyword);
-                
-        //         idx++;
-        //     }
-        //     set.add(curKeyword);
-        //     ans = Math.max(ans, set.size());
-        // }
-        // return ans;
+        return curLen;        
 
-
-        // 풀이 2. 
-        // int l = 0, r = 0, ans = 0;
-        // int n = s.length();
-        // Set<Character> set = new HashSet<>();
-        // while(r < n) {
-        //     Character curKeyword = s.charAt(r);
-        //     if(set.contains(curKeyword)) { // abc 넣다가 새로운 a 만나
-        //         Character leftKeyword = s.charAt(l);
-        //         set.remove(leftKeyword);
-        //         l++;
-        //     } else {
-        //         Character rightKeyword = s.charAt(r);
-        //         set.add(rightKeyword);
-        //         r++;
-        //         ans = Math.max(ans, set.size());
-        //     }
-        // }
-        // return ans;
     }
 }
