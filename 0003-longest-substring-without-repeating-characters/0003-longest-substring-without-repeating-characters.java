@@ -8,6 +8,8 @@ class Solution {
         int curLen = 0;
         int l = 0;
         int r = 0;
+        // int l , r = 0;
+        // int r = 0;
         Set<Character> memo = new HashSet<>();
 
         while(r < s.length()) {
