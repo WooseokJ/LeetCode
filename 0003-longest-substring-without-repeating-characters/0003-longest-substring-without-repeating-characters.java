@@ -6,10 +6,10 @@ class Solution {
     public int lengthOfLongestSubstring(String s) {
         int ans = 0;
         int curLen = 0;
-        int l = 0;
-        int r = 0;
-        // int l , r = 0;
-        // int r = 0;
+
+
+        int l = 0, r = 0;
+
         Set<Character> memo = new HashSet<>();
 
         while(r < s.length()) {
