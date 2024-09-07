@@ -99,6 +99,7 @@
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0046-permutations](https://github.com/WooseokJ/LeetCode/tree/master/0046-permutations) |
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
@@ -108,6 +109,7 @@
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
+| [0046-permutations](https://github.com/WooseokJ/LeetCode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Hash Table
