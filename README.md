@@ -103,6 +103,7 @@
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/WooseokJ/LeetCode/tree/master/0053-maximum-subarray) |
+| [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0198-house-robber](https://github.com/WooseokJ/LeetCode/tree/master/0198-house-robber) |
 | [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
@@ -121,6 +122,7 @@
 | [0003-longest-substring-without-repeating-characters](https://github.com/WooseokJ/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 ## Matrix
 |  |
@@ -194,4 +196,8 @@
 |  |
 | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
