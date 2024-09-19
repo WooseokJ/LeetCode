@@ -97,6 +97,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/WooseokJ/LeetCode/tree/master/0001-two-sum) |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0046-permutations](https://github.com/WooseokJ/LeetCode/tree/master/0046-permutations) |
@@ -119,6 +120,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/WooseokJ/LeetCode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/WooseokJ/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
