@@ -1,14 +1,17 @@
 class Solution {
+    
+   
     public int numIslands(char[][] grid) {
         int ans = 0;
         int rowLen = grid.length;
         int colLen = grid[0].length;
         boolean[][] visited = new boolean[rowLen][colLen];
-        for(int r =0; r < rowLen; r++) {
-            for(int c =0; c< colLen; c++) {
-                if((grid[r][c] == '1')) {
-                    if(!visited[r][c]) {
-                        bfs(r,c,visited, grid);
+
+        for(int r = 0; r < rowLen; r++) {
+            for(int c = 0; c < colLen; c++) {
+                if(!visited[r][c]) {
+                    if(grid[r][c] == '1') {
+                        dfs(r,c,grid,visited);
                         ans++;
                     }
                 }
@@ -16,28 +19,30 @@ class Solution {
         }
         return ans;
     }
-    public static void bfs(int r, int c, boolean[][] visited, char[][] grid) {
-        int[] dr = {1,-1,0,0};
-        int[] dc = {0,0,1,-1};
 
+    public static void dfs(int r, int c, char[][] grid, boolean[][] visited) {
         visited[r][c] = true;
-        
+
+        int[] dr = {0,0,1,-1, 1,1,-1,-1};
+        int[] dc = {1,-1,0,0, 1,-1,1,-1};
+        int rowLen = grid.length;
+        int colLen = grid[0].length;
+
         for(int i =0; i < 4; i++) {
             int nextRow = r + dr[i];
             int nextCol = c + dc[i];
             if(isValid(nextRow, nextCol, grid)) {
                 if(!visited[nextRow][nextCol]) {
                     if(grid[nextRow][nextCol] == '1') {
-                        bfs(nextRow, nextCol, visited, grid);
+                        dfs(nextRow, nextCol, grid, visited);
                     }
-                    
                 }
             }
         }
     }
     public static boolean isValid(int r, int c, char[][] grid) {
         int rowLen = grid.length;
-        int colLen = grid[0].length;
-        return ((0 <= r && r < rowLen ) && (0 <= c && c < colLen));
+   int colLen = grid[0].length;
+        return ((0 <= r && r < rowLen) && (0 <= c && c < colLen));
     }
 }
