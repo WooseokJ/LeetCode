@@ -104,6 +104,7 @@
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/WooseokJ/LeetCode/tree/master/0053-maximum-subarray) |
+| [0078-subsets](https://github.com/WooseokJ/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0198-house-robber](https://github.com/WooseokJ/LeetCode/tree/master/0198-house-robber) |
@@ -118,6 +119,7 @@
 | [0046-permutations](https://github.com/WooseokJ/LeetCode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0077-combinations](https://github.com/WooseokJ/LeetCode/tree/master/0077-combinations) |
+| [0078-subsets](https://github.com/WooseokJ/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Hash Table
@@ -207,4 +209,8 @@
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/WooseokJ/LeetCode/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
