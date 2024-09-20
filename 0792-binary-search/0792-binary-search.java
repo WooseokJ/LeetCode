@@ -10,12 +10,12 @@ class Solution {
         // for(int i =0; i< nums.length; i++) {
         //     nums[i] = temp.get(i);
         // } 
-                //step 1 오름차순 정렬
+            //step 1 오름차순 정렬
         int[] arr = Arrays.copyOf(nums, nums.length); // nums가 정렬안되어있다고 가정하므로.
         Arrays.sort(arr); // 오름차순 
 
         int l = 0;
-        int r = nums.length -1;
+        int r = arr.length -1;
         while(l <= r) {
             int mid = (l+r) / 2;
             if(nums[mid] > target) {
