@@ -16,12 +16,8 @@ class Solution {
             } else if(keyword == '[') {
                 stack.offerLast(']');
             } else { // ] ) } 셋중 하나 
-		        if(!stack.isEmpty()) {
-                    if(stack.peekLast() == keyword) {
-                        stack.pollLast();
-                    } else {
-                        return false;
-                    }
+		        if(!stack.isEmpty() && stack.peekLast() == keyword) {
+                    stack.pollLast();
                 } else {
                     return false;
                 }
