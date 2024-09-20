@@ -111,6 +111,7 @@
 | [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0792-binary-search](https://github.com/WooseokJ/LeetCode/tree/master/0792-binary-search) |
 | [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 ## Backtracking
 |  |
@@ -205,6 +206,7 @@
 |  |
 | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
+| [0792-binary-search](https://github.com/WooseokJ/LeetCode/tree/master/0792-binary-search) |
 ## Union Find
 |  |
 | ------- |
