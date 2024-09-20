@@ -113,6 +113,7 @@
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0792-binary-search](https://github.com/WooseokJ/LeetCode/tree/master/0792-binary-search) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/WooseokJ/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1325-path-with-maximum-probability](https://github.com/WooseokJ/LeetCode/tree/master/1325-path-with-maximum-probability) |
 ## Backtracking
 |  |
@@ -139,6 +140,7 @@
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/WooseokJ/LeetCode/tree/master/0200-number-of-islands) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/WooseokJ/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 ## String
 |  |
 | ------- |
@@ -174,6 +176,7 @@
 | ------- |
 | [0200-number-of-islands](https://github.com/WooseokJ/LeetCode/tree/master/0200-number-of-islands) |
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
+| [1171-shortest-path-in-binary-matrix](https://github.com/WooseokJ/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 ## Greedy
 |  |
 | ------- |
