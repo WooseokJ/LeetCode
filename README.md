@@ -145,6 +145,7 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/WooseokJ/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0020-valid-parentheses](https://github.com/WooseokJ/LeetCode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
@@ -166,6 +167,7 @@
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/WooseokJ/LeetCode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/WooseokJ/LeetCode/tree/master/0042-trapping-rain-water) |
 ## Monotonic Stack
 |  |
