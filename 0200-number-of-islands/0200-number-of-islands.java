@@ -1,8 +1,8 @@
 class Solution {
     
-   
     public int numIslands(char[][] grid) {
-        int ans = 0;
+        int[] ans = {0};
+
         int rowLen = grid.length;
         int colLen = grid[0].length;
         boolean[][] visited = new boolean[rowLen][colLen];
@@ -12,12 +12,12 @@ class Solution {
                 if(!visited[r][c]) {
                     if(grid[r][c] == '1') {
                         dfs(r,c,grid,visited);
-                        ans++;
+                        ans[0]++;
                     }
                 }
             }
         }
-        return ans;
+        return ans[0];
     }
 
     public static void dfs(int r, int c, char[][] grid, boolean[][] visited) {
