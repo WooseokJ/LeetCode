@@ -108,6 +108,7 @@
 | [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0198-house-robber](https://github.com/WooseokJ/LeetCode/tree/master/0198-house-robber) |
+| [0200-number-of-islands](https://github.com/WooseokJ/LeetCode/tree/master/0200-number-of-islands) |
 | [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/WooseokJ/LeetCode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
@@ -137,6 +138,7 @@
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
+| [0200-number-of-islands](https://github.com/WooseokJ/LeetCode/tree/master/0200-number-of-islands) |
 ## String
 |  |
 | ------- |
@@ -170,6 +172,7 @@
 ## Breadth-First Search
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/WooseokJ/LeetCode/tree/master/0200-number-of-islands) |
 | [0322-coin-change](https://github.com/WooseokJ/LeetCode/tree/master/0322-coin-change) |
 ## Greedy
 |  |
@@ -211,8 +214,13 @@
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0200-number-of-islands](https://github.com/WooseokJ/LeetCode/tree/master/0200-number-of-islands) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0078-subsets](https://github.com/WooseokJ/LeetCode/tree/master/0078-subsets) |
+## Depth-First Search
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/WooseokJ/LeetCode/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
