@@ -104,6 +104,7 @@
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/WooseokJ/LeetCode/tree/master/0053-maximum-subarray) |
+| [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0128-longest-consecutive-sequence](https://github.com/WooseokJ/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0198-house-robber](https://github.com/WooseokJ/LeetCode/tree/master/0198-house-robber) |
 | [0300-longest-increasing-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/0300-longest-increasing-subsequence) |
@@ -116,6 +117,7 @@
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
 | [0046-permutations](https://github.com/WooseokJ/LeetCode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/WooseokJ/LeetCode/tree/master/0051-n-queens) |
+| [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Hash Table
 |  |
@@ -130,11 +132,13 @@
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/WooseokJ/LeetCode/tree/master/0037-sudoku-solver) |
+| [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 ## String
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/WooseokJ/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/WooseokJ/LeetCode/tree/master/0049-group-anagrams) |
+| [0079-word-search](https://github.com/WooseokJ/LeetCode/tree/master/0079-word-search) |
 | [0131-palindrome-partitioning](https://github.com/WooseokJ/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [1250-longest-common-subsequence](https://github.com/WooseokJ/LeetCode/tree/master/1250-longest-common-subsequence) |
 ## Dynamic Programming
